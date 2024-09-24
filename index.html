@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu na Altura do Topo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .topo {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      position: relative;
+    }
+
+    .menu-vertical {
+      background-color: #444;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 1%; /* Define a altura do menu igual à altura da página */
+      width: 250x; /* Define a largura do menu */
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .menu-vertical ul {
+      list-style: none;
+      width: 100%;
+      padding-top: 20px;
+    }
+
+    .menu-vertical li {
+      width: 100%;
+    }
+
+    .menu-vertical a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 15px 0;
+      text-align: center;
+      background-color: #555;
+      border-bottom: 1px solid #666;
+      transition: background-color 0.3s;
+    }
+
+    .menu-vertical a:hover {
+      background-color: #666;
+    }
+
+    .conteudo {
+      margin-left: 220px; /* Afasta o conteúdo principal para não ficar sob o menu */
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="topo">
+    <h1>Meu Site</h1>
+  </div>
+
+  <div class="menu-vertical">
+    <ul>
+      <li><a href="#">Início</a></li>
+      <li><a href="#">Sobre</a></li>
+      <li><a href="#">Serviços</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </div>
+
+  <div class="conteudo">
+    <h2>Bem-vindo ao site</h2>
+    <p>Este é o conteúdo principal. O menu fica na lateral esquerda, ocupando toda a altura da página.</p>
+  </div>
+
+</body>
+</html>
